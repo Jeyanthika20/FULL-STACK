@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav section -->
+     <div class="2xl:container mx-auto bg-white sticky top-0">
+        <div class="w-[80%] mx-auto grid grid-cols-3 items-center py-3">
+            <div class="">
+                <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/food-munch-img.png?updatedAt=1754764020857" alt="logo" width="80px" 
+                height="80px"/>
+            </div>
+            <div class="col-span-2">
+                <ul class="lg:flex items-center gap-5 justify-end hidden">
+                    <li><a href="#whychooseus">Why Choose Us?</a></li>
+                    <li><a href="#explore">Explore Our Menu</a></li>
+                    <li><a href="#freshhealthy">Fresh Healthy</a></li>
+                    <li><a href="#payment">Payment</a></li>
+                    <li><a href="#redeem">Redeem</a></li>
+                </ul>
+                <div class="lg:hidden flex justify-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+                        <path d="M4 12h16" /><path d="M4 18h16" /><path d="M4 6h16" /></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero section -->
+     <section>
+        <div class="2xl:container mx-auto bg-[url('https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/foodmunch-banner-bg.png_updatedAt=1745939013497?updatedAt=1755887242538')] h-screen bg-cover bg-no-repeat bg-center">
+            <div class="w-[80%] mx-auto flex flex-col items-center justify-center h-full">
+                <div class="flex flex-col items-center gap-5">
+                    <h1 class="text-white text-[34px] leading-[30px] text-[Roboto] font-[500] text-center">Get Delicious Food Anytime</h1>
+                    <p class="text-white text-[24px] leading-[24px] text-[Roboto] text-center">Eat Smart and Healthy</p>
+                    <div class="flex gap-3">
+                        <button class="text-white bg-[#c6aa00] py-2 px-3 rounded-md text-[Roboto]">View Menu</button>
+                        <button class="text-[#c6aa00] border border-[#c6aa00] py-2 px-3 rounded-md text-[Roboto]">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Why choose Us? -->
+     <section class="py-7">
+        <div class="2xl:container mx-auto bg-[#F9FBFE] py-4">
+            <div class="w-[80%] mx-auto">
+                <h1 class="text-[#183b56] font-bold text-[28px] leading-[34px] text-[Roboto]">Why Choose Us?</h1>
+                <p class="font-normal text-[#5a7184] text-[16px] leading-[24px] text-[Roboto]">We use both original recipes and classic versions of famous food items.</p>
+                <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 py-4">
+                    <div class="bg-white p-5 shadow-lg rounded-xl flex flex-col items-center gap-5">
+                        <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/food-serve.png?updatedAt=1754764070306" alt="food" class="w-[200px]">
+                        <h1 class="font-500 text-[#323f4b] text-[22px] leading-[24px] text-[Roboto]">Food Service</h1>
+                        <p class="font-normal text-[#5a7184] text-[16px] leading-[18px] text-[Roboto] text-center">Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.
+                        </p>
+                    </div>
+                     <div class="bg-white p-5 shadow-lg rounded-xl flex flex-col items-center gap-4">
+                        <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/fruits-img.png?updatedAt=1754764180019" alt="fruits" class="w-[200px]">
+                        <h1 class="font-500 text-[#323f4b] text-[22px] leading-[24px] text-[Roboto]">Fresh Food</h1>
+                        <p class="font-normal text-[#5a7184] text-[16px] leading-[18px] text-[Roboto] text-center">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.
+                        </p>
+                    </div>
+                     <div class="bg-white p-5 shadow-lg rounded-xl flex flex-col items-center gap-4">
+                        <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/offers-img.png?updatedAt=1754764141091" alt="offer" class="w-[200px]">
+                        <h1 class="font-500 text-[#323f4b] text-[22px] leading-[24px] text-[Roboto]">Best Offers</h1>
+                        <p class="font-normal text-[#5a7184] text-[16px] leading-[18px] text-[Roboto] text-center">Food Coupons & Offers upto 50% OFF and Exclusive Promo Codes on All Online Food Orders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Explore Menu -->
+     <section class="py-4">
+        <div class="2xl:container mx-auto">
+            <div class="w-[80%] mx-auto">
+                    <h1 class="text-[#183b56] font-bold text-[28px] leading-[34px] text-[Roboto]">Explore Menu</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-3">
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-ginger-fried-img.png?updatedAt=1754764349749" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-veg-starters-img.png?updatedAt=1754852685930" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-soup-img.png?updatedAt=1754853444901" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-grilled-seafood-img.png?updatedAt=1754852466798" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-hyderabadi-biryani-img.png?updatedAt=1754852658149" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-mushroom-noodles-img.png?updatedAt=1754852713896" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-gluten-img.png?updatedAt=1754852740453" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                        <div class="bg-white shadow-lg rounded-xl p-5 flex flex-col items-start gap-2">
+                            <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/em-coffee-bourbon-img.png?updatedAt=1754853415186" alt="nonveg" class="w-[280px] rounded-xl object-cover">
+                            <p class="text-[Roboto] text-[#323f4b] text-[18px] leading-[22px]">Non-Veg Starters</p>
+                            <div class="flex gap-2">
+                                <p class="text-[#C6AA00] text-[14px] hover:text-blue-500 hover:underline leading-[21px]">View all</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right text-[#C6AA00]"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </div>
+                    </div>             
+            </div>
+        </div>
+     </section>
+    <!-- Fresh And Healthy -->
+     <section class="py-3">
+        <div class="2xl:container mx-auto bg-[#F9FBFE] py-12">
+            <div class="w-[80%] mx-auto">
+                <div class="flex justify-around items-center gap-20">
+                    <div class="w-[400px]">
+                    <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/healthy-food-plate-img.png?updatedAt=1754853480775" alt="healthy">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                    <h1 class="text-[#183b56] font-bold text-[28px] leading-[34px] text-[Roboto]">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                        <p class="font-normal text-[#5a7184] text-[16px] leading-[24px] text-[Roboto]">Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature. with the true and unadulterated gifts from mother nature.</p>
+                        <div>                      
+                            <button class="text-white bg-[#C6AA00] py-2 px-3 rounded-md text-[Roboto]">Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+     </section>
+    <!-- Delivery section -->
+      <section class="py-5"> 
+        <div class="2xl:container mx-auto bg-white">
+            <div class="w-[80%] mx-auto">
+                <div class="flex items-center gap-10">
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-[#183b56] font-bold text-[28px] leading-[34px] text-[Roboto]">Delivery and Payment</h1>
+                        <p class="font-normal text-[#5a7184] text-[16px] leading-[24px] text-[Roboto]">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive to your door. Plus, you get a 5% discount on every order every time you pay online.</p>
+                        <div>                      
+                            <button class="text-white bg-[#C6AA00] py-2 px-3 rounded-md text-[Roboto]">Order Now</button>
+                        </div>
+                        <div class="flex items-center gap-5 w-[150px]">
+                            <div>
+                                <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/visa-card-img.png?updatedAt=1754843957776" alt="visa">
+                            </div>
+                            <div>
+                                <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/master-card-img.png?updatedAt=1754844132734" alt="master">
+                            </div>
+                            <div>
+                                <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/american-express-img.png?updatedAt=1754844050417" alt="express">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[440px]">
+                        <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/delivery-payment-section-img.png?updatedAt=1754843934344" alt="payment">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+    <!-- Thanks section -->
+     <section>
+        <div class="2xl:container mx-auto bg-[#FDF2C5]">
+            <div class="w-[80%] mx-auto py-7">
+                <div class="flex items-center gap-10">
+                    <div class="flex flex-col gap-3">
+                        <h1 class="text-[#183b56] font-bold text-[28px] leading-[34px] text-[Roboto]">Thank you for being a valuable customer to us.</h1>
+                        <p class="font-normal text-[#5a7184] text-[16px] leading-[24px] text-[Roboto]">We have a surprise gift for you</p>
+                        <div>                      
+                            <button class="text-white bg-[#C6AA00] py-2 px-3 rounded-md text-[Roboto]">Redeem Gift</button>
+                        </div>
+                    </div>
+                    <div class="w-[150px]">
+                        <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/thanking-customers-section-img.png?updatedAt=1754842085959" alt="gift">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Follow us section -->
+     <section class="py-10">
+        <div class="2xl:container mx-auto">
+            <div class="w-[80%] mx-auto">
+                <div class="flex flex-col items-center gap-3">
+                    <div>
+                        <h1 class="text-[#183b56] text-[28px] leading-[34px] font-bold">Follow Us</h1>
+                    </div>
+                    <div class="grid grid-cols-3 gap-6">
+                        <div class="rounded-full bg-[#FAF7E8] py-4 px-4 text-[#D0B200]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter-icon lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </div>
+
+                        <div class="rounded-full bg-[#FAF7E8] py-4 px-4 text-[#D0B200]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram-icon lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </div>
+
+                        <div class="rounded-full bg-[#FAF7E8] py-4 px-4 text-[#D0B200]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- Footer Section -->
+      <footer class="py-10 bg-[#0D2436]">
+            <div class="w-[80%] mx-auto flex flex-col justify-center items-center gap-2">
+                <img src="https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/Food%20Store%20/food-munch-img.png?updatedAt=1754764020857" alt="footer" class="w-[60px]">
+                <p class="text-[#959ead] text-[16px] leading-[19px] font-[Roboto] font-[700]">orderfood@foodmunch.com</p>
+                <p class="text-[#959ead] text-[14px] leading-[21px] font-[Roboto] font-[400]">123 Ayur Vigyan Nagar, New Delhi, India.</p>
+            </div>
+      </footer>
+</body>
+</html>
