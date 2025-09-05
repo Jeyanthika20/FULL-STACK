@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="2xl:container mx-auto">
+        <div class="w-[80%] mx-auto flex justify-center items-center h-screen">
+             <div class="flex flex-col gap-5 items-center border shadow-lg p-10 rounded-lg bg-gradient-to-b from-pink-400 to-purple-300 ">
+             <h1 class="text-[28px] leading-[24px]">Update Password</h1>
+            <form id="updatePasswordForm" class="flex flex-col gap-5">
+                <div class="flex flex-col gap-2">
+                    <label for="newpass" class="text-[16px]">NEW PASSWORD</label>
+                    <input type="password" name="pass" id="newPassword" class="border border-black border-3 rounded-lg py-2 pr-16 pl-3" placeholder="Create new password">
+                    <p class="text-red-400 text-[14px]" id="newErrmsg"></p>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="conpass" class="text-[16px]">CONFIRM PASSWORD</label>
+                    <input type="password" name="pass" id="confirmPassword" class="border border-black border-3 rounded-lg py-2 pr-16 pl-3" placeholder="Confirm password">
+                    <p class="text-red-500 text-[14px]" id="conErrmsg"></p>
+                </div>
+                <div class="flex justify-center">
+                    <button class="text-[18px] rounded-lg bg-blue-600 py-2 px-4 text-white" id="updateBtn">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        var updateForm = document.getElementById("updatePasswordForm");
+        var newPassword =document.getElementById("newPassword");
+        var confirmPassword=document.getElementById("confirmPassword");
+        var newErrmsg=document.getElementById("newErrmsg");
+        var conErrmsg=document.getElementById("conErrmsg");
+        updateForm.addEventListener("submit",(e)=>{
+            e.preventDefault();
+            advancedValidation(newPassword.value, confirmPassword.value)
+            console.dir(newPassword)
+        })
+        var advancedValidation = (newPassword,confirmPassword) =>{
+            const newpass=/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
+            if(newPassword.match(newpass)){
+                newErrmsg.textContent=" ";
+            }
+            else{
+                newErrmsg.textContent="*Required";
+            }
+            if(confirmPassword.value == newPassword.value && confirmPassword.value !== " "){
+                conErrmsg.textContent=" ";
+            }
+            else{
+                conErrmsg.textContent="*Password is incorrect";
+            }
+        }
+    </script>
+</body>
+</html>     
