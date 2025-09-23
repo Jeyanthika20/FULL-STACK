@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar starts */
+.navbar-brand{
+    font-family: "Lobster", sans-serif;
+    font-size: 32px !important;
+}
+.navbar-brand:hover{
+    color: red !important;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    margin: 0px 10px;
+}
+
+.nav-link:hover{
+    color: red !important;
+}
+.search{
+    width: 50%;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 60px;
+    padding: 20px 30px;
+}
+
+.btn0{
+    all:unset;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.btn0:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+/* navbar ends */
+
+/* main section starts */
+.main{
+    background-image: url(https://ik.imagekit.io/oh6ehhkv7/FULL%20STACK/projects/BootStrap/30d5538bd8790cc78195936047b18ddb.jpg?updatedAt=1757597976174 );
+    height: 90vh;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+}
+
+.main h1{
+    font-size:60px ;
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.main-content{
+    margin-top: 200px;
+}
+
+.btn1{
+    all:unset;
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-left: 40%;
+}
+
+.btn1:hover{
+    background-color:transparent;
+    color:purple;
+    border: 1px solid purple;
+    cursor: pointer;
+}
